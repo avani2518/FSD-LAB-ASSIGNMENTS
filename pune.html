@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FAMOUS PUNE COLLEGES</title>
+    <link rel="stylesheet" href="punecss.css">
+    <link rel="icon" href="puneimage.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-8gZVxITj+8N8PMEjnOEc0+/GJ03EjTxIxO07Iq0gF1kB84XnyFggkTZ7DCSj8X5VdIjNi6BDJ7hP4LRJROuJw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(178, 230, 241);
+        }
+        .college {
+            max-width: 900px;
+            margin: 50px auto;
+            background-color: lightcyan;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px blue;
+            border: 2px solid black;
+            text-align: center; 
+        }
+        h1, h2 {
+            color: red;
+        }
+        p {
+            color: black;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        iframe {
+            display: block;
+            margin: 20px auto; 
+        }
+        ul {
+            text-align: left; 
+            padding-left: 0; 
+        }
+        ul li {
+            margin-bottom: 20px; 
+        }
+        .location-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: red;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .location-button:hover {
+            background-color: darkred;
+        }
+        .more-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .more-link a {
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+        }
+        .more-link a:hover {
+            text-decoration: underline;
+        }
+        header {
+            background-color: rgb(13, 26, 30);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 45px;
+        }
+        .header-buttons {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding-right: 20px;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin-right: 20px;
+        }
+        .dots {
+            background-color: black;
+            color: white;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .dots:hover {
+            background-color: darkgray;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {background-color: #f1f1f1;}
+        .dropdown:hover .dropdown-content {display: block;}
+        .search-container {
+            position: relative;
+            display: inline-block;
+        }
+        #searchInput {
+            width: 100%;
+            max-width: 400px;
+            padding: 10px 40px 10px 10px; 
+            border: 2px solid white;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+        .search-container .fa-search {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: darkblue;
+            font-size: 20px;
+        }
+        .toc {
+            background-color: #f0f8ff; 
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px auto;
+            max-width: 900px;
+            text-align: center;
+}
+
+.toc h2 {
+    color: red;
+    margin-top: 0;
+}
+
+.toc ul {
+    padding-left: 20px;
+}
+
+.toc ul li {
+    margin-bottom: 10px;
+}
+
+.toc ul li a {
+    text-decoration: none;
+    color: #1e90ff; 
+}
+
+.toc ul li a:hover {
+    text-decoration: underline;
+    color: black; 
+}
+
+    </style>
+</head>
+
+<body> 
+    <header>
+        <h1>FAMOUS COLLEGES IN PUNE</h1>
+        <nav>
+            <ul>
+                <li><a href="hotel.html">Hotels</a></li>
+                <li><a href="transport.html">Transport</a></li>
+                <li><a href="historical.html">Historical Places</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search for colleges..." onkeyup="checkEnter(event)">
+            <i class="fa fa-search"></i> 
+            <div id="searchResult" class="search-result"></div>
+        </div>
+
+        <div class="header-buttons">
+            <div class="dropdown">
+                <button class="dots">•<br>•<br>•</button>
+                <div id="dropdownMenu" class="dropdown-content">
+                    <a href="settings.html"><b>Settings</b></a>
+                    <a href="help.html"><b>Help</b></a>
+                    <a href="login.html"><b>Login/Register</b></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="toc">
+        <h2>TABLE OF CONTENTS</h2>
+        <ul>
+            <li><a href="#colleges"><b>List of Famous Colleges</b></a></li>
+            <li><a href="#about"><b>About Colleges in Pune</b></a></li>
+            <li><a href="#video"><b>YouTube Video</b></a></li>
+        </ul>
+    </div>
+
+    <div class="college" id="colleges">
+        <img src="pune.png" alt="Pune Image" class="center" width="800" height="350">
+        <hr>
+        <h1><br><marquee scrollamount="20">LIST OF FAMOUS COLLEGES IN PUNE</marquee></h1><br>
+        <hr>
+        <ul>
+            <li data-url="mitlocation.html">
+                <b>MIT WORLD PEACE UNIVERSITY</b>
+                <br>
+                <img src="mit.png" alt="MIT image" class="center" width="800" height="400">
+                <br>
+                <button onclick="location.href='mitlocation.html';">View MIT WPU</button>
+            </li>
+            <hr>
+            <li data-url="mmcoelocation.html">
+                <b>MMCOE</b>
+                <br>
+                <img src="mmcoe.png" alt="MMCOE image" class="center" width="800" height="400">
+                <br>
+                <button onclick="location.href='mmcoelocation.html';">View MMCOE</button>
+            </li>
+            <hr>
+            <li data-url="garwarelocation.html">
+                <b>GARWARE COLLEGE</b>
+                <br>
+                <img src="garware.png" alt="Garware image" class="center" width="800" height="400">
+                <br>
+                <button onclick="location.href='garwarelocation.html';">View GARWARE</button>
+            </li>
+            <hr>
+            <li data-url="fergussonlocation.html">
+                <b>FERGUSSON COLLEGE</b>
+                <br>
+                <img src="fc.png" alt="Fergusson image" class="center" width="800" height="400">
+                <br>
+                <button onclick="location.href='fergussonlocation.html';">View FERGUSSON</button>
+            </li>
+            <hr>
+            <li data-url="coeplocation.html">
+                <b>COEP</b>
+                <br>
+                <img src="coep.png" alt="COEP image" class="center" width="800" height="400">
+                <br>
+                <button onclick="location.href='coeplocation.html';">View COEP</button>
+            </li>
+            <hr>
+            <li data-url="symbiosislocation.html">
+                <b>SYMBIOSIS COLLEGE</b>
+                <br>
+                <img src="symb.png" alt="Symbiosis image" class="center" width="800" height="400">
+                <br>
+                <button onclick="location.href='symbiosislocation.html';">View SYMBIOSIS</button>
+            </li>
+            <hr>
+        </ul>
+        
+        <section id="about">
+            <h2>*ABOUT COLLEGES IN PUNE*</h2>
+            <p><b>Pune's colleges are celebrated for their academic rigor and diverse offerings across disciplines like engineering, management, arts, science, and medicine. These institutions emphasize practical learning and research, preparing students for dynamic careers. With modern facilities, experienced faculty, and a vibrant student community, Pune's educational ecosystem fosters innovation and entrepreneurship. The city's reputation as an educational hub, often referred to as the "Oxford of the East," underscores its rich heritage and cosmopolitan atmosphere, making it a prime choice for higher education seekers in India.</b></p>
+        </section>
+        <div class="more-link">
+            <!-- <a href="more_info.html">See More</a> -->
+            <button type="button" class="btn btn-link">See More</button>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <h3 id="video" style="text-align: center;"><b>Here is a YouTube video which guides you for the same:</b></h3>
+    <iframe width="1100" height="600" src="https://www.youtube.com/embed/NhtvShnV_fI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 colleges in Pune | Designed by Avani</p>
+        </div>
+    </footer>
+
+    <script>
+        function searchFunction() {
+            var input, filter, ul, li, b, i, txtValue, url;
+            input = document.getElementById('searchInput');
+            filter = input.value.toUpperCase();
+            ul = document.querySelector('ul');
+            li = ul.getElementsByTagName('li');
+    
+            for (i = 0; i < li.length; i++) {
+                b = li[i].getElementsByTagName('b')[0];
+                if (b) {
+                    txtValue = b.textContent || b.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        url = li[i].getAttribute('data-url');
+                        if (url) {
+                            window.location.href = url;
+                            return; 
+                        }
+                    }
+                }
+            }
+        }
+    
+        function checkEnter(event) {
+            if (event.key === 'Enter') {
+                searchFunction();
+            }
+        }
+    </script>
+</body>
+</html>

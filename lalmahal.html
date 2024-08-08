@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lal Mahal</title>
+    <link rel="stylesheet" href="historicalcss.css">
+    <link rel="icon" href="sg.png" type="image/png">
+    <style>
+        .header h1, .info h2, .map-container h2 {
+            text-align: center;
+            font-weight: 900;
+        }
+
+        .header h1 {
+            font-size: 3em; 
+        }
+
+        .info h2 {
+            font-size: xx-large;
+        }
+
+        .map-container h2 {
+            font-size: xx-large;
+        }
+
+        .info p {
+            color: black; 
+            font-weight: 700;
+            font-size: large;
+        }
+
+        .map-container {
+            width: 100%;
+            text-align: center; 
+        }
+        
+        iframe {
+            margin: 30px auto; 
+            display: block;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: black;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        .back-to-home {
+            display: inline-block;
+            padding: 10px 20px; 
+            background-color: #eb9ca7; 
+            color: #000; 
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin: 20px auto; 
+            text-align: center; 
+            display: block; 
+            max-width: fit-content; 
+            box-sizing: border-box; 
+        }
+
+        .back-to-home:hover {
+            background-color: #c4096a; 
+        }
+
+        .place-img-container {
+            text-align: center; /* Center the image container */
+            margin: 20px 0; /* Add some margin above and below the container */
+        }
+
+        .place-img {
+            width: 100%; 
+            height: 600px; 
+            max-width: 1200px; 
+            display: inline-block; /* Treat the image as an inline block element */
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Lal Mahal</h1>
+        </div>
+    </header>
+
+    <section id="info" class="section info">
+        <div class="container">
+            <h2>ABOUT LAL MAHAL</h2>
+            <hr>
+            <p><b>Lal Mahal, located in Pune, is a historic palace that was originally built in 1630 by the Maratha king Chhatrapati Shivaji Maharaj's father, Shahaji Bhosale. The palace is renowned for its striking red walls, which gave it the name "Lal Mahal," meaning "Red Palace." It was the residence of Chhatrapati Shivaji Maharaj during his childhood. The original structure was demolished in the 19th century, but a reconstruction was completed in 1988. Lal Mahal holds significant historical importance and is a popular tourist attraction, offering a glimpse into Maratha heritage and architecture. The palace is situated amidst bustling markets, making it a prominent landmark in Pune.</b></p>
+        </div>
+    </section>
+    
+    <div class="place-img-container">
+    <img src="lm.png" alt="Lal Mahal" class="place-img">
+    </div>
+    <br><br>
+    <hr>
+    
+    <section id="map" class="section map">
+        <div class="container">
+            <div class="map-container">
+                <h2>SEE LOCATION:</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.2070849312204!2d73.847540!3d18.525535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c185ce85b5e3%3A0xe0d0df2a8a5570a8!2sLal%20Mahal!5e0!3m2!1sen!2sin!4v1722512521837!5m2!1sen!2sin" width="1200" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
+            </div>
+        </div>
+    </section>
+
+    <a href="historical.html" class="back-to-home">Back to Home</a> 
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Historical Places in Pune | Designed by Avani</p>
+        </div>
+    </footer>
+</body>
+</html>

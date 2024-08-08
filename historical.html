@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Places in Pune</title>
+    <link rel="stylesheet" href="historicalcss.css">
+    <link rel="icon" href="sg.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .contact-form {
+            background-color: rgb(241, 201, 207);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contact-form h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: black;
+        }
+
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            height: 150px;
+        }
+
+        .contact-form button {
+            background-color: #f56578;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .contact-form button:hover {
+            background-color: #c4096a;
+        }
+
+        .back-home {
+    text-align: center;
+    margin: 20px 0;
+        }
+
+.back-home a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: lightpink;
+    border-radius: 5px;
+    }
+
+.back-home a:hover {
+    color: #3a3a3a;
+    background-color: rgb(245, 101, 125);
+    }
+
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Discover Pune's Historical Treasures</h1>
+        </div>
+    </header>
+    <section id="places" class="section places">
+        <div class="container">
+            <h2>EXPLORE HISTORICAL PLACES!</h2>
+            <hr>
+            <div class="places-grid">
+                <div class="place-card">
+                    <a href="shaniwarwada.html">
+                        <img src="sw.png" alt="Shaniwar Wada" class="place-img">
+                        <h3>SHANIWAR WADA</h3>
+                    </a>
+                    <p><b>A historic fortification in the heart of Pune, known for its architectural grandeur and historical significance.</b></p>
+                </div>
+                <div class="place-card">
+                    <a href="agakhan.html">
+                        <img src="ag.png" alt="Aga Khan Palace" class="place-img">
+                        <h3>AGA KHAN PALACE</h3>
+                    </a>
+                    <p class="common-font"><b>A serene palace with Italian arches and spacious lawns, famous for its association with Mahatma Gandhi.</b></p>
+                </div>
+                <div class="place-card">
+                    <a href="sinhagad.html">
+                        <img src="sg.png" alt="Sinhagad Fort" class="place-img">
+                        <h3>SINHAGAD FORT</h3>
+                    </a>
+                    <p class="common-font"><b>An ancient fort atop a hill offering panoramic views and significant historical battles.</b></p>
+                </div>
+                <div class="place-card">
+                    <a href="additional.html">
+                        <img src="additional.png" alt="Additional Place" class="place-img">
+                        <h3>ADDITIONAL PLACES FOR YOU!</h3>
+                    </a>
+                    <p><b>CLICK HERE FOR MORE HISTORICAL PLACES!</b></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <hr>
+    <section id="video" class="section video">
+        <div class="container">
+            <h2>Discover More:</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121059.04711156077!2d73.78056543154413!3d18.524598599502376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1721802965278!5m2!1sen!2sin" width="80%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    <br><hr><br>    
+
+    <section id="contact" class="section contact-form">
+        <div class="container">
+            <h2>Contact Us:</h2>
+            <form action="https://formspree.io/f/your_form_id" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="tel" name="phone" placeholder="Your Phone Number">
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <br><br>
+    <div class="back-home">
+        <a href="pune.html">Back to Home Page</a>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Historical Places in Pune | Designed by Avani</p>
+        </div>
+    </footer>
+</body>
+</html>

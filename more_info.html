@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Information About Pune Colleges</title>
+    <link rel="stylesheet" href="punecss.css"> 
+    <link rel="icon" href="puneimage.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Q8RwihQcYC6l98gIi8Hm1bY57NkYb8z99/7W8HUZ+BxTaL3O6hWwBqAlT3pe1hiHkUzv5z67X+7PPbu0mCKsHw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 0;
+            background-color: rgb(178, 230, 241);
+        }
+        header {
+            background-color: black;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 45px;
+        }
+        .header-buttons {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding-right: 20px;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin-right: 20px;
+        }
+        .dots {
+            background-color: black;
+            color: white;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .dots:hover {
+            background-color: darkgray;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {background-color: #f1f1f1;}
+        .dropdown:hover .dropdown-content {display: block;}
+        .college {
+            max-width: 800px;
+            margin: auto;
+            background-color: lightcyan;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px blue;
+            border: 2px solid black;
+            text-align: center;
+        }
+        h1, h2 {
+            color: red;
+        }
+        p {
+            color: darkblue;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        iframe {
+            display: block;
+            margin: 20px auto; 
+        }
+        ul {
+            list-style-type: none; /* Remove default bullets */
+            padding-left: 0;
+            margin: 0;
+        }
+        ul li {
+            position: relative;
+            padding-left: 25px; /* Space for custom bullets */
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        ul li::before {
+            content: '•'; /* Custom bullet character */
+            position: absolute;
+            left: 0;
+            color: black; /* Change bullet color here */
+            font-size: 20px; /* Adjust bullet size */
+        }
+        .more-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .more-link a {
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+        }
+        .more-link a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>More Information About Pune Colleges</h1>
+        <div class="header-buttons">
+            <div class="dropdown">
+                <button class="dots">•••</button>
+                <div id="dropdownMenu" class="dropdown-content">
+                    <a href="settings.html"><b>Settings</b></a>
+                    <a href="help.html"><b>Help</b></a>
+                    <a href="login.html"><b>Login/Register</b></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="college">
+        <section id="more-info">
+            <h2>Detailed Information About Pune Colleges:</h2>
+            <p>Pune is home to numerous prestigious colleges offering a wide range of programs. Here is more information about some of the prominent colleges and their branches:</p>
+            <hr>
+            <h3>1. MIT WORLD PEACE UNIVERSITY</h3>
+            <p><b>MIT WPU offers programs in engineering, management, law, and humanities. The university is known for its emphasis on research and practical learning.</b></p>
+            <ul>
+                <li>Engineering: Mechanical, Civil, Computer Science</li>
+                <li>Management: MBA, Executive MBA</li>
+                <li>Law: LLB, LLM</li>
+                <li>Humanities: Psychology, Sociology</li>
+            </ul>
+            <hr>
+            <h3>2. MMCOE</h3>
+            <p><b>MMCOE provides high-quality education in engineering with a focus on innovation and technical skills.</b></p>
+            <ul>
+                <li>Engineering: Electrical, Electronics, Chemical</li>
+                <li>Management: MBA in Operations, Marketing</li>
+            </ul>
+            <hr>
+            <h3>3. GARWARE COLLEGE</h3>
+            <p><b>Garware College specializes in arts, science, and commerce programs. The college is known for its robust academic curriculum and extracurricular activities.</b></p>
+            <ul>
+                <li>Arts: English, History, Philosophy</li>
+                <li>Science: Physics, Chemistry, Biology</li>
+                <li>Commerce: B.Com, M.Com</li>
+            </ul>
+            <hr>
+            <h3>4. FERGUSSON COLLEGE</h3>
+            <p><b>Fergusson College offers a wide range of undergraduate and postgraduate programs in arts, science, and commerce.</b></p>
+            <ul>
+                <li>Science: Mathematics, Botany, Zoology</li>
+                <li>Arts: Economics, Political Science</li>
+                <li>Commerce: Business Administration</li>
+            </ul>
+            <hr>
+            <h3>5. COEP</h3>
+            <p><b>COEP is one of the oldest engineering colleges in India, offering a variety of engineering programs.</b></p>
+            <ul>
+                <li>Engineering: Computer Engineering, Information Technology, Structural Engineering</li>
+            </ul>
+            <hr>
+            <h3>6. SYMBIOSIS COLLEGEG</h3>
+            <p><b>Symbiosis College is known for its programs in management, law, and liberal arts.</b></p>
+            <ul>
+                <li>Management: BBA, MBA</li>
+                <li>Law: Integrated LLB</li>
+                <li>Liberal Arts: BA in Journalism, Media Studies</li>
+            </ul>
+            <hr>
+        </section>
+
+        <div class="more-link">
+            <a href="pune.html">Back to Home</a>
+        </div>
+    </div>
+    
+</body>
+</html>

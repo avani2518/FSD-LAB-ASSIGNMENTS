@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Conrad - Details</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f4efe6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #3a3a3a;
+            color: #f4efe6;
+            padding: 10px 70px;
+            text-align: center;
+            border-bottom: 5px solid #b29762;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: x-large;
+        }
+        .container {
+            padding: 30px;
+            background: #e4ddd3;
+            border-radius: 10px;
+            margin: 50px auto;
+            max-width: 1200px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .hotel-details {
+            background: #fff;
+            border: 1px solid #b29762;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            box-sizing: border-box; /* Ensure padding and border are included in width */
+            font-size: medium;
+        }
+        .hotel-image {
+            border-radius: 10px;
+            max-width: 55%; /* Adjust as needed */
+            border: 1px solid #b29762;
+            flex-shrink: 0;
+            box-sizing: border-box; /* Ensure padding and border are included in width */
+            height: 500px;
+        }
+        .hotel-info {
+            flex: 1;
+            min-width: 0; /* Prevents overflow */
+            box-sizing: border-box; /* Ensure padding and border are included in width */
+        }
+        .hotel-info h2 {
+            margin: 30px 0 10px; /* Added space above title */
+            font-size: 2.4em; /* Increased font size */
+            color: #6b4e3d;
+        }
+        .hotel-info p {
+            margin: 5px 0;
+            color: #555;
+            font-size: 1.2em; /* Increased font size */
+        }
+        .hotel-info p strong {
+            color: #6b4e3d;
+        }
+        .book-now {
+            display: inline-block;
+            background-color: #6b4e3d;
+            color: #fff;
+            padding: 15px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2em;
+            text-align: center;
+            margin-top: 20px;
+            cursor: pointer;
+            border: none;
+            transition: background-color 0.3s;
+        }
+        .book-now:hover {
+            background-color: #8c6a4b;
+        }
+        .back-to-home {
+            display: inline-block;
+            background-color: #6b4e3d;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1em;
+            text-align: center;
+            margin-top: 20px;
+            cursor: pointer;
+            border: none;
+            transition: background-color 0.3s;
+        }
+        .back-to-home:hover {
+            background-color: #8c6a4b;
+        }
+        .reviews-container {
+            background: #fff;
+            border: 1px solid #b29762;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 50px; /* Space above reviews */
+            box-sizing: border-box; /* Ensure padding and border are included in width */
+        }
+        .reviews h3 {
+            margin-bottom: 10px;
+            color: #6b4e3d;
+        }
+        .review {
+            margin-bottom: 20px;
+        }
+        .review p {
+            margin: 0;
+            color: #555;
+        }
+        .stars {
+            color: #f4c542; /* Gold color for stars */
+        }
+        footer {
+            background: #3a3a3a;
+            color: #f4efe6;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            border-top: 5px solid #b29762;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hotel Conrad</h1>
+    </header>
+    <div class="container">
+        <div class="hotel-details">
+            <img src="hotel4.png" alt="Hotel Conrad" class="hotel-image">
+            <div class="hotel-info">
+                <h2>Hotel Conrad</h2>
+                <br>
+                <p><strong>Location:</strong> Koregaon Park</p>
+                <br>
+                <p><strong>Rating:</strong> ★★★★☆</p>
+                <br>
+                <p><strong>Price Range:</strong> ₹5000 - ₹8000 per night</p>
+                <br>
+                <p><strong>Ambiance:</strong> Elegant and modern with a touch of classic charm.</p>
+                <br>
+                <p><strong>Amenities:</strong> Free Wi-Fi, Pool, Spa, Restaurant, Bar, Gym, Airport Shuttle, Concierge Services, 24-Hour Front Desk, Business Center.</p>
+                <a href="bookingpage.html" class="book-now">Book Now</a>
+            </div>
+        </div>
+        <div class="reviews-container">
+            <h3>REVIEWS</h3>
+            <hr>
+            <div class="review">
+                <p><strong>Rachel Adams:</strong> <br><br><span class="stars">★★★★☆</span><br><br>We had a wonderful stay at Hotel Conrad. The rooms were spacious and beautifully decorated, and the staff were friendly and helpful. The pool area was a great place to relax.</p>
+            </div>
+            <hr>
+            <div class="review">
+                <p><strong>James Wilson:</strong> <br><br><span class="stars">★★★★★</span><br><br>The hotel exceeded our expectations in every way. The service was top-notch, and the amenities were excellent. We particularly enjoyed the restaurant, which offered a wide variety of delicious dishes.</p>
+            </div>
+            <hr>
+            <div class="review">
+                <p><strong>Sophia Martinez:</strong> <br><br><span class="stars">★★★★☆</span><br><br>Hotel Conrad is a great place to stay. The location is perfect, and the ambiance is elegant and relaxing. The only issue we had was with the Wi-Fi, which was a bit slow at times.</p>
+            </div>
+            <hr>
+            <div class="review">
+                <p><strong>Daniel Brown:</strong> <br><br><span class="stars">★★★★☆</span><br><br>We enjoyed our stay at Hotel Conrad. The staff were attentive and the amenities were excellent. The location is ideal for exploring the city. Highly recommend this hotel.</p>
+            </div>
+        </div>
+        <a href="hotel.html" class="back-to-home">Back to Home</a>
+    </div>
+    <footer>
+        <p>&copy; 2024 Hotels in Pune. All rights reserved.</p>
+    </footer>
+</body>
+</html>

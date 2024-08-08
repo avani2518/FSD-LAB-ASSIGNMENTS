@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotels in Pune</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f4efe6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; 
+        }
+        header {
+            background: #3a3a3a;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            border-bottom: 5px solid #b29762;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: x-large;
+        }
+        .container {
+            padding: 20px;
+            background: #e0ddd9;
+            border-radius: 10px;
+            margin: 0 auto;
+            max-width: 1200px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .hotel-card {
+            background: #fbfaf8;
+            border: 1px solid #b29762;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px 0;
+            padding: 20px;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: inherit;
+            flex-wrap: wrap; 
+        }
+        .hotel-card:hover {
+            transform: scale(1.1);
+            box-shadow: 0 45px 16px rgba(0, 0, 0, 0.2);
+        }
+        .hotel-image {
+            border-radius: 10px;
+            max-width: 120px;
+            height: auto; 
+            margin-right: 15px;
+            border: 1px solid #b29762;
+            flex-shrink: 0;
+        }
+        .hotel-info {
+            flex: 1;
+        }
+        .hotel-info h2 {
+            margin: 0 0 8px;
+            font-size: 1.5em;
+            color: black;
+        }
+        .hotel-info p {
+            margin: 4px 0;
+            color: #555;
+        }
+        .hotel-info p strong {
+            color: #352e2a;
+        }
+        footer {
+            background: #3a3a3a;
+            color: #f4efe6;
+            text-align: center;
+            padding: 15px;
+            border-top: 5px solid #b29762;
+        }
+        h3 {
+            text-align: center;
+            font-size: 1.5em;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 20px 0;
+        }
+        hr {
+            border: none;
+            background-color: black;
+            height: 2px;
+            margin: 7px;
+        }
+        @media (max-width: 768px) {
+            .hotel-card {
+                flex-direction: column;
+                align-items: flex-start;
+                margin: 50px 0;
+            }
+            .hotel-image {
+                max-width: 100%;
+                margin-bottom: 15px;
+            }
+            .hotel-info h2 {
+                font-size: 1.2em;
+            }
+        }
+        .back-home {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .back-home a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .back-home a:hover {
+            color: rgb(245, 151, 68);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>~TOP HOTELS IN PUNE~</h1>
+    </header>
+    <h3><b>HERE IS A LIST OF SOME FAMOUS HOTELS IN PUNE:</b></h3>
+    <hr><hr><hr>
+    <br><br><br>
+    <div class="container">
+        <a href="royalorchid.html" class="hotel-card">
+            <img src="hotel1.png" alt="Hotel Royal Orchid" class="hotel-image">
+            <div class="hotel-info">
+                <h2>Hotel Royal Orchid</h2>
+                <p><strong>Location:</strong> Koregaon Park</p>
+                <p><strong>Rating:</strong> ★★★★☆</p>
+                <p><strong>Price Range:</strong> ₹4000 - ₹6000 per night</p>
+            </div>
+        </a>
+        <br>
+        <a href="sheraton.html" class="hotel-card">
+            <img src="hotel2.png" alt="Hotel Sheraton" class="hotel-image">
+            <div class="hotel-info">
+                <h2>Hotel Sheraton</h2>
+                <p><strong>Location:</strong> Bund Garden</p>
+                <p><strong>Rating:</strong> ★★★★★</p>
+                <p><strong>Price Range:</strong> ₹7000 - ₹10000 per night</p>
+            </div>
+        </a>
+        <br>
+        <a href="westin.html" class="hotel-card">
+            <img src="hotel3.png" alt="Hotel Westin" class="hotel-image">
+            <div class="hotel-info">
+                <h2>Hotel Westin</h2>
+                <p><strong>Location:</strong> Koregaon Park</p>
+                <p><strong>Rating:</strong> ★★★★★</p>
+                <p><strong>Price Range:</strong> ₹8000 - ₹12000 per night</p>
+            </div>
+        </a>
+        <br>
+        <a href="conrad.html" class="hotel-card">
+            <img src="hotel4.png" alt="Hotel Conrad" class="hotel-image">
+            <div class="hotel-info">
+                <h2>Hotel Conrad</h2>
+                <p><strong>Location:</strong> Mangaldas Road</p>
+                <p><strong>Rating:</strong> ★★★★★</p>
+                <p><strong>Price Range:</strong> ₹10000 - ₹15000 per night</p>
+            </div>
+        </a>
+        <br>
+        <a href="mariott.html" class="hotel-card">
+            <img src="hotel5.png" alt="Hotel Marriott" class="hotel-image">
+            <div class="hotel-info">
+                <h2>Hotel Marriott</h2>
+                <p><strong>Location:</strong> Senapati Bapat Road</p>
+                <p><strong>Rating:</strong> ★★★★☆</p>
+                <p><strong>Price Range:</strong> ₹6000 - ₹9000 per night</p>
+            </div>
+        </a>
+        <br>
+        <a href="hyatt.html" class="hotel-card">
+            <img src="hotel6.png" alt="Hotel Hyatt" class="hotel-image">
+            <div class="hotel-info">
+                <h2>Hotel Hyatt</h2>
+                <p><strong>Location:</strong> Kalyani Nagar</p>
+                <p><strong>Rating:</strong> ★★★★☆</p>
+                <p><strong>Price Range:</strong> ₹5000 - ₹8000 per night</p>
+            </div>
+        </a>
+        <br>
+    </div>
+    <br><br><br>
+    <hr><hr><hr>
+    <br><br><br>
+    <div class="back-home">
+        <a href="pune.html">Back to Home Page</a>
+    </div>
+    <footer>
+        <p>&copy; 2024 Hotels in Pune. All rights reserved.</p>
+    </footer>
+</body>
+</html>

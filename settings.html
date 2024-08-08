@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Settings</title>
+    <link rel="stylesheet" href="punecss.css">
+    <link rel="icon" href="puneimage.png" type="image/png">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 0;
+            background-color: #21c8de; /* Light cyan background */
+        }
+
+        .settings-container {
+            max-width: 800px;
+            margin: auto;
+            background-color: lightcyan; /* Light cyan background for container */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px blue;
+            border: 2px solid blue; /* Blue border */
+            text-align: center;
+        }
+
+        h1 {
+            color: red; /* Red color for header */
+            font-size: 2em;
+        }
+
+        p {
+            color: black; /* Black text color */
+            font-size: 1.1em;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .back-link a {
+            text-decoration: none;
+            color: blue; /* Blue color for link */
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .back-link a:hover {
+            text-decoration: underline;
+            color: #01579b; /* Darker blue on hover */
+        }
+
+        .theme-buttons, .notification-buttons {
+            margin-top: 20px;
+        }
+
+        .theme-buttons button, .notification-buttons button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+        }
+
+        /* Light Button */
+        .light-button {
+            background-color: rgb(228, 223, 215); /* Yellow background */
+            color: #000; /* Black text */
+        }
+
+        .light-button:hover {
+            background-color: red; /* Darker orange on hover */
+            color: #fff; /* White text */
+        }
+
+        /* Dark Button */
+        .dark-button {
+            background-color: black; /* Dark gray background */
+            color: #fff; /* White text */
+        }
+
+        .dark-button:hover {
+            background-color: red; /* Red background on hover */
+            color: #fff; /* White text */
+        }
+
+        /* Notification Button */
+        .notification-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+        }
+
+        /* On Button */
+        .on-button {
+            background-color: #66bb6a; /* Green background */
+            color: #fff; /* White text */
+        }
+
+        .on-button:hover {
+            background-color: #388e3c; /* Darker green on hover */
+        }
+
+        .on-button.active {
+            background-color: #388e3c; /* Darker green for active */
+            color: #fff; /* White text */
+        }
+
+        /* Off Button */
+        .off-button {
+            background-color: #ef5350; /* Red background */
+            color: #fff; /* White text */
+        }
+
+        .off-button:hover {
+            background-color: #c62828; /* Darker red on hover */
+        }
+
+        .off-button.active {
+            background-color: #c62828; /* Darker red for active */
+            color: #fff; /* White text */
+        }
+
+        /* Dropdown */
+        select {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid black; /* Black border */
+            border-radius: 5px;
+            background-color: white; /* White background */
+            color: black; /* Black text */
+            transition: background-color 0.3s; /* Smooth transition effect */
+        }
+
+        select:hover {
+            background-color: lightcyan; /* Light cyan background on hover */
+        }
+
+        /* Light theme styles */
+        .light-theme {
+            background-color: #fff; /* White background */
+            color: #000; /* Black text */
+        }
+
+        .light-theme .settings-container {
+            background-color: lightcyan; /* Light cyan background for container */
+            border-color: blue; /* Blue border color for the container */
+        }
+
+        /* Dark theme styles */
+        .dark-theme {
+            background-color: #333; /* Dark background */
+            color: #fff; /* White text */
+        }
+
+        .dark-theme .settings-container {
+            background-color: #444; /* Darker background for the container */
+            border-color: #666; /* Darker border color for the container */
+        }
+
+        /* Ensure paragraphs are light text color in dark mode */
+        .dark-theme p {
+            color: #ddd; /* Light gray text color */
+        }
+    </style>
+</head>
+<body>
+    <div class="settings-container">
+        <h1>SETTINGS</h1>
+        <hr>
+        <ul>
+            <li>
+                <b>THEME:</b> Choose between light and dark mode:
+                <div class="theme-buttons">
+                    <button class="light-button" onclick="setTheme('light')">Light</button>
+                    <button class="dark-button" onclick="setTheme('dark')">Dark</button>
+                </div>
+                <hr>
+            </li>
+            <li>
+                <b>NOTIFICATIONS:</b> Enable or disable notifications:
+                <div class="notification-buttons">
+                    <button class="notification-button on-button" onclick="toggleNotification('on')">On</button>
+                    <button class="notification-button off-button" onclick="toggleNotification('off')">Off</button>
+                </div>
+                <hr>
+            </li>
+            <li>
+                <b>LANGUAGE:</b> Select your preferred language:
+                <br><br>
+                <select name="language" id="language">
+                    <option value="english">English</option>
+                    <option value="hindi">Hindi</option>
+                    <option value="korean">Korean</option>
+                    <option value="thai">Thai</option>
+                    <option value="spanish">Spanish</option>
+                    <option value="french">French</option>
+                    <option value="german">German</option>
+                    <option value="chinese">Chinese</option>
+                </select>
+                <hr>
+            </li>
+        </ul>
+        <div class="back-link">
+            <a href="index.html">Back to Home Page</a>
+        </div>
+    </div>
+    <script>
+        function setTheme(theme) {
+            if (theme === 'light') {
+                document.body.classList.remove('dark-theme');
+                document.body.classList.add('light-theme');
+            } else if (theme === 'dark') {
+                document.body.classList.remove('light-theme');
+                document.body.classList.add('dark-theme');
+            }
+        }
+
+        function toggleNotification(state) {
+            var onButton = document.querySelector('.on-button');
+            var offButton = document.querySelector('.off-button');
+
+            if (state === 'on') {
+                onButton.classList.add('active');
+                offButton.classList.remove('active');
+            } else if (state === 'off') {
+                offButton.classList.add('active');
+                onButton.classList.remove('active');
+            }
+        }
+
+        function goToHomePage() {
+        window.location.href = 'pune.html';
+    }
+
+    // Ensure your function is properly bound to the click event
+    document.querySelector('.back-link a').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default anchor behavior
+        goToHomePage(); // Call the function to navigate
+    });
+    </script>
+</body>
+</html>

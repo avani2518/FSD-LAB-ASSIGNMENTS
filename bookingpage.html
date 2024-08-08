@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Stay - Hotel Royal Orchid</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f4efe6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #3a3a3a;
+            color: #f4efe6;
+            padding: 10px 70px;
+            text-align: center;
+            border-bottom: 5px solid #b29762;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: x-large;
+        }
+        .container {
+            padding: 30px;
+            background: #e4ddd3;
+            border-radius: 10px;
+            margin: 50px auto;
+            max-width: 800px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #6b4e3d;
+            margin-bottom: 20px;
+        }
+        .booking-form {
+            background: #fff;
+            border: 1px solid #b29762;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #6b4e3d;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #b29762;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .form-group input[type="submit"] {
+            background-color: #6b4e3d;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            padding: 15px;
+            font-size: 1.2em;
+            transition: background-color 0.3s;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #8c6a4b;
+        }
+        .back-to-home {
+            display: inline-block;
+            background-color: #6b4e3d;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1em;
+            text-align: center;
+            margin-top: 20px;
+            cursor: pointer;
+            border: none;
+            transition: background-color 0.3s;
+        }
+        .back-to-home:hover {
+            background-color: #8c6a4b;
+        }
+        footer {
+            background: #3a3a3a;
+            color: #f4efe6;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            border-top: 5px solid #b29762;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hotel Royal Orchid - Booking</h1>
+    </header>
+    <div class="container">
+        <h2><b>Book Your Stay</b></h2>
+        <div class="booking-form">
+            <form action="submit-booking.php" method="post">
+                <div class="form-group">
+                    <label for="name"><b>Full Name:</b></label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email"><b>Email Address:</b></label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone"><b>Phone Number:</b></label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="check-in"><b>Check-in Date:</b></label>
+                    <input type="date" id="check-in" name="check_in" required>
+                </div>
+                <div class="form-group">
+                    <label for="check-out"><b>Check-out Date:</b></label>
+                    <input type="date" id="check-out" name="check_out" required>
+                </div>
+                <div class="form-group">
+                    <label for="room-type"><b>Room Type:</b></label>
+                    <select id="room-type" name="room_type" required>
+                        <option value="single"><b>Single</b></option>
+                        <option value="double"><b>Double</b></option>
+                        <option value="suite"><b>Suite</b></option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="special-requests"><b>Special Requests:</b></label>
+                    <textarea id="special-requests" name="special_requests" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Confirm Booking">
+                </div>
+                <div class="form-group">
+                    <a href="hotel.html" class="back-to-home">Back to Home</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Hotels in Pune. All rights reserved.</p>
+    </footer>
+</body>
+</html>

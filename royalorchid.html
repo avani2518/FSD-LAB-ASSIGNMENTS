@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Royal Orchid - Details</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f4efe6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #3a3a3a;
+            color: #f4efe6;
+            padding: 10px 70px;
+            text-align: center;
+            border-bottom: 5px solid #b29762;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: x-large;
+        }
+        .container {
+            padding: 30px;
+            background: #e4ddd3;
+            border-radius: 10px;
+            margin: 50px auto;
+            max-width: 1200px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .hotel-details {
+            background: #fff;
+            border: 1px solid #b29762;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            box-sizing: border-box; /* Ensure padding and border are included in width */
+            font-size: medium;
+        }
+        .hotel-image {
+            border-radius: 10px;
+            max-width: 55%; /* Adjust as needed */
+            border: 1px solid #b29762;
+            flex-shrink: 0;
+            box-sizing: border-box; /* Ensure padding and border are included in width */
+            height: 500px;
+        }
+        .hotel-info {
+            flex: 1;
+            min-width: 0; /* Prevents overflow */
+            box-sizing: border-box; /* Ensure padding and border are included in width */
+        }
+        .hotel-info h2 {
+            margin: 30px 0 10px; /* Added space above title */
+            font-size: 2.4em; /* Increased font size */
+            color: #6b4e3d;
+        }
+        .hotel-info p {
+            margin: 5px 0;
+            color: #555;
+            font-size: 1.2em; /* Increased font size */
+        }
+        .hotel-info p strong {
+            color: #6b4e3d;
+        }
+        .book-now {
+            display: inline-block;
+            background-color: #6b4e3d;
+            color: #fff;
+            padding: 15px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2em;
+            text-align: center;
+            margin-top: 20px;
+            cursor: pointer;
+            border: none;
+            transition: background-color 0.3s;
+        }
+        .book-now:hover {
+            background-color: #8c6a4b;
+        }
+        .back-to-home {
+            display: inline-block;
+            background-color: #6b4e3d;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1em;
+            text-align: center;
+            margin-top: 20px;
+            cursor: pointer;
+            border: none;
+            transition: background-color 0.3s;
+        }
+        .back-to-home:hover {
+            background-color: #8c6a4b;
+        }
+        .reviews-container {
+            background: #fff;
+            border: 1px solid #b29762;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 50px; /* Space above reviews */
+            box-sizing: border-box; /* Ensure padding and border are included in width */
+        }
+        .reviews h3 {
+            margin-bottom: 10px;
+            color: #6b4e3d;
+        }
+        .review {
+            margin-bottom: 20px;
+        }
+        .review p {
+            margin: 0;
+            color: #555;
+        }
+        .stars {
+            color: #f4c542; /* Gold color for stars */
+        }
+        footer {
+            background: #3a3a3a;
+            color: #f4efe6;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            border-top: 5px solid #b29762;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hotel Royal Orchid</h1>
+    </header>
+    <div class="container">
+        <div class="hotel-details">
+            <img src="hotel1.png" alt="Hotel Royal Orchid" class="hotel-image">
+            <div class="hotel-info">
+                <h2>Hotel Royal Orchid</h2>
+                <br>
+                <p><strong>Location:</strong> Koregaon Park</p>
+                <br>
+                <p><strong>Rating:</strong> ★★★★☆</p>
+                <br>
+                <p><strong>Price Range:</strong> ₹4000 - ₹6000 per night</p>
+                <br>
+                <p><strong>Ambiance:</strong> Luxurious and modern with lush green surroundings.</p>
+                <br>
+                <p><strong>Amenities:</strong> Free Wi-Fi, Pool, Spa, Restaurant, Bar, Gym, Airport Shuttle, Concierge Services, 24-Hour Front Desk, Business Center.</p>
+                <a href="bookingpage.html" class="book-now">Book Now</a>
+            </div>
+        </div>
+        <div class="reviews-container">
+            <h3>REVIEWS</h3>
+            <hr>
+            <div class="review">
+                <p><strong>John Doe:</strong> <br><br><span class="stars">★★★★☆</span><br><br>Amazing stay! The service was impeccable, with attentive staff who went above and beyond to ensure our comfort. The rooms were exceptionally well-appointed, offering both luxury and coziness that made our stay truly memorable.</p>
+            </div>
+            <hr>
+            <div class="review">
+                <p><strong>Jane Smith:</strong> <br><br><span class="stars">★★★★★</span><br><br>Beautiful hotel with top-notch amenities that enhance the overall experience. The decor and design of the hotel are stylish and inviting. The pool area was a standout feature, providing a serene and enjoyable space to relax and unwind.</p>
+            </div>
+            <hr>
+            <div class="review">
+                <p><strong>Emily Johnson:</strong> <br><br><span class="stars">★★★★☆</span><br><br>The staff were incredibly friendly and helpful throughout our stay. The hotel’s attention to detail in its rooms and public spaces was evident, making for a comfortable and pleasant experience. The dining options were excellent as well.</p>
+            </div>
+            <hr>
+            <div class="review">
+                <p><strong>Michael Brown:</strong> <br><br><span class="stars">★★★★☆</span><br><br>We had a fantastic time at Hotel Royal Orchid. The amenities were modern and well-maintained, and the location was perfect for exploring the area. The highlight was definitely the beautiful garden and outdoor seating areas.</p>
+            </div>
+        </div>
+        <a href="hotel.html" class="back-to-home">Back to Home</a>
+    </div>
+    <footer>
+        <p>&copy; 2024 Hotels in Pune. All rights reserved.</p>
+    </footer>
+</body>
+</html>

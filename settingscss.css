@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 0;
+    background-color: rgb(60, 182, 223); 
+}
+
+.settings-container {
+    max-width: 800px;
+    margin: auto;
+    background-color: lightcyan; /* Light cyan background for container */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px blue;
+    border: 5px solid blue; /* Blue border */
+    text-align: center;
+}
+
+/* Light theme styles */
+.light-theme {
+    background-color: #fff; /* White background */
+    color: #000; /* Black text */
+}
+
+.light-theme .settings-container {
+    background-color: lightcyan; /* Light cyan background for container */
+    border-color: blue; /* Blue border color for the container */
+}
+
+/* Dark theme styles */
+.dark-theme {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+}
+
+.dark-theme .settings-container {
+    background-color: #444; /* Darker background for the container */
+    border-color: #666; /* Darker border color for the container */
+}
+
+.dark-theme .theme-buttons p {
+    color: #000; /* Black text color */
+}
+
+/* Ensure paragraphs are light text color in dark mode */
+.dark-theme p {
+    color: #ddd; /* Light gray text color */
+}
+
+h1 {
+    color: red; /* Red color for header */
+    font-size: 2em;
+}
+
+p {
+    color: black; /* Black text color */
+    font-size: 1.1em; 
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-link a {
+    text-decoration: none;
+    color: blue; /* Blue color for link */
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.back-link a:hover {
+    text-decoration: underline;
+    color: #01579b; /* Darker blue on hover */
+}
+
+.theme-buttons, .notification-buttons {
+    margin-top: 20px;
+}
+
+.theme-buttons button, .notification-buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+}
+
+/* Light Button */
+.light-button {
+    background-color: #ffeb3b; /* Yellow background */
+    color: #000; /* Black text */
+}
+
+.light-button:hover {
+    background-color: #f57f17; /* Darker orange on hover */
+    color: #fff; /* White text */
+}
+
+/* Dark Button */
+.dark-button {
+    background-color: #212121; /* Dark gray background */
+    color: #fff; /* White text */
+}
+
+.dark-button:hover {
+    background-color: #c62828; /* Red background on hover */
+    color: #fff; /* White text */
+}
+
+/* Notification Button */
+.notification-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+}
+
+/* On Button */
+.on-button {
+    background-color: #66bb6a; /* Green background */
+    color: #fff; /* White text */
+}
+
+.on-button:hover {
+    background-color: #388e3c; /* Darker green on hover */
+}
+
+.on-button.active {
+    background-color: #388e3c; /* Darker green for active */
+    color: #fff; /* White text */
+}
+
+/* Off Button */
+.off-button {
+    background-color: #ef5350; /* Red background */
+    color: #fff; /* White text */
+}
+
+.off-button:hover {
+    background-color: #c62828; /* Darker red on hover */
+}
+
+.off-button.active {
+    background-color: #c62828; /* Darker red for active */
+    color: #fff; /* White text */
+}
+
+/* Dropdown */
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid black; /* Black border */
+    border-radius: 5px;
+    background-color: white; /* White background */
+    color: black; /* Black text */
+    transition: background-color 0.3s; /* Smooth transition effect */
+}
+
+select:hover {
+    background-color: lightcyan; /* Light cyan background on hover */
+}
